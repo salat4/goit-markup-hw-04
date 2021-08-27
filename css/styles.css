@@ -132,6 +132,15 @@ img {
 }
 .link-mail {
   color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
+}
+.tel-icon {
+  margin-right: 10px;
+}
+.mail-icon {
+  margin-right: 10px;
+  align-items: center;
 }
 .link-mail:hover,
 .link-mail:focus {
@@ -147,6 +156,13 @@ img {
   font-size: 14px;
   line-height: 1.42;
   color: var(--secondary-text-color);
+}
+.mail-icon {
+  fill: currentColor;
+}
+
+.tel-icon {
+  fill: currentColor;
 }
 .section {
   padding-top: 94px;
@@ -167,6 +183,15 @@ img {
 .main-title {
   padding-top: 200px;
   padding-bottom: 200px;
+}
+.main-title {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  background-image: url(../images/hero/hero-back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .name-title {
   color: var(--white-color);
@@ -214,6 +239,15 @@ img {
   justify-content: space-between;
   margin-top: 30px;
   margin-left: 30px;
+}
+.exp-icon {
+  padding-bottom: 25px;
+  padding-right: 102px;
+  padding-left: 102px;
+  padding-top: 25px;
+  margin-bottom: 30px;
+
+  background-color: var(--button-bg-color);
 }
 
 .originality-exp {
@@ -289,6 +323,30 @@ img {
   margin-top: -30px;
   padding-bottom: 94px;
 }
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  fill: rgba(175, 177, 184, 1);
+}
+.social-link:hover,
+.social-link:focus {
+  fill: var(--white-color);
+  background-color: var(--accent-color);
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-items:not(:last-child) {
+  margin-right: 10px;
+}
+
 .name-list {
   font-family: 'Roboto', 'sans-serif';
   font-weight: 500;
@@ -308,6 +366,7 @@ img {
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondary-text-color);
+  margin-bottom: 16px;
 }
 .prof {
   flex-basis: calc((100% - 4 * 30) / 4);
@@ -319,6 +378,49 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.fourth-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.fourth-title {
+  margin-bottom: 50px;
+}
+.client-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: rgba(175, 177, 184, 1);
+}
+.client-link:hover,
+.client-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.client-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 94px;
+}
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+.footer-all {
+  display: flex;
+}
+.left-footer {
+  margin-right: 70px;
 }
 .footer {
   background-color: var(--background-color);
@@ -384,6 +486,43 @@ img {
   margin-bottom: 9px;
 }
 
+.right-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.right-name {
+  color: var(--white-color);
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+.social-footer-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--white-color);
+}
+.social-footer-link:hover,
+.social-footer-link:focus {
+  fill: var(--white-color);
+  background-color: var(--accent-color);
+}
+.social-footer-list {
+  display: flex;
+  justify-content: center;
+}
+.social-footer-items:not(:last-child) {
+  margin-right: 10px;
+}
+
 .port-btn:not(:last-child) {
   margin-right: 8px;
   align-items: center;
@@ -415,6 +554,8 @@ img {
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--button-bg-color);
   background-color: var(--accent-color);
 }
